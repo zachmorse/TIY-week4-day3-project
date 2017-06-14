@@ -6,7 +6,7 @@ var dataDisplay = document.querySelector(".customers");
 
 function customerImport() {
   "use strict";
-  fetch("https://randomuser.me/api/?results=12") // this is a PROMISE, a placeholder for future data
+  fetch("https://randomuser.me/api/?results=12&nat=US") // this is a PROMISE, a placeholder for future data
     .then(function(dataFromAPI) {
       return dataFromAPI.json();
     })
@@ -15,7 +15,6 @@ function customerImport() {
       for (var i = 0; i < people.length; i++) {
         makeProfile(people[i]);
       }
-      console.log(data.results);
     });
 }
 
@@ -61,6 +60,11 @@ function makeProfile(data) {
     phoneNum.classList.add("phoneNum");
     phoneNum.textContent = data.phone;
     profileBox.appendChild(phoneNum);
+
+    var cellNum = document.createElement("h5");
+    cellNum.classList.add("cellNum");
+    cellNum.textContent = data.cell;
+    profileBox.appendChild(cellNum);
   }
   createWrapper();
 }

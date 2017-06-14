@@ -3,7 +3,12 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "Cousine";
+  font-family: "Lato";
+}
+
+.headLine {
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
 .customers {
@@ -18,7 +23,6 @@ body {
   flex: 1 1 20%;
   flex-direction: column;
   height: 550px;
-  border: 1px solid black;
   margin: 10px;
   padding: 1px;
 }
@@ -26,4 +30,34 @@ body {
 .pic {
   height: 20.6vw;
   width: auto;
+}
+
+.fullName {
+  margin: 0% 10%;
+  padding: 3%;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 2px solid #3fa979;
+}
+
+.email {
+  color: #dddddd;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 8% 0%;
+}
+
+p {
+  color: #9d9d9d;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.phoneNum {
+  padding-bottom: 5%;
+}
+
+.cellNum {
+  color: transparent;
+  text-shadow: 0px 0px 4px #4eb77c;
 }
